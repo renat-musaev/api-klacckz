@@ -21,7 +21,7 @@ class UserController extends Controller
     public function get()
     {
         $user = Auth::user();
-        $notification = NotificationAndroid::where('id', '>', $user->notification_android_id)->get();
+        $notification = Notification::where('id', '>', $user->notification_id)->get();
         $user->notification = $notification;
         return response()->json($user);
     }

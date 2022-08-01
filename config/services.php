@@ -31,4 +31,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'smsc' => [
+        'link' => env('SMSC_LINK'),
+        'login' => env('SMSC_LOGIN'),
+        'password' => env('SMSC_PASSWORD'),
+    ],
+
 ];
