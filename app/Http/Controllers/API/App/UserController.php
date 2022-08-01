@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\API\App;
 
 use App\Http\Controllers\Controller;
-use App\Models\NotificationAndroid;
+use App\Models\Notification;
 use App\Models\PasswordReset;
 use App\Models\User;
 use App\Models\UserQRCode;
