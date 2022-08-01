@@ -30,7 +30,7 @@ class UserController extends Controller
     {
         $id = Auth::user()->id;
         $user = User::find($id);
-        $user->notification_android_id = $request->notification_id;
+        $user->notification_id = $request->notification_id;
         $response = $user->save();
         return response()->json($response);
     }
