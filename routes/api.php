@@ -81,6 +81,11 @@ Route::group(['middleware' => 'auth:api'], function() {
         Route::post('history', 'App\Http\Controllers\API\PaymentController@history');
     });
 
+    //payment
+    Route::prefix('applepay')->group(function() {
+        Route::post('payment', 'App\Http\Controllers\API\ApplePayController@payment');
+    });
+
     Route::prefix('favorite')->group(function() {
         Route::post('gdz', 'App\Http\Controllers\API\FavoriteController@gdz');
         Route::post('exercise', 'App\Http\Controllers\API\FavoriteController@exercise');
