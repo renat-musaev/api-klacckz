@@ -105,3 +105,13 @@ Route::get('/vimeo', 'App\Http\Controllers\VimeoController@vimeo');
 // Route::get('/update', function () {
 //     User::where('id', '>', 0)->update(array('device_count' => 1));
 // })->name('shop');
+
+
+
+Route::get('/', function () {
+    $number = 2000;
+    $proc = 30;
+$result = ($number/100*$proc);
+//$result = $number - $result;
+dd($result);
+});

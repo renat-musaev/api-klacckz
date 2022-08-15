@@ -17,7 +17,9 @@ class ApplePayController extends Controller
             'amount' => ['required'],
         ]);
 
-        $code = 1000;
+        $code = 5000;
+
+        //$request->amount = $request->amount - ($request->amount/(100*30));
 
         if ($request->content == 1) {
             $this->payPerPage($request->uid, $request->cid, $request->amount, $code);
