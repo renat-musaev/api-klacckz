@@ -64,7 +64,7 @@ class BookController extends Controller
                         };
                     }
 
-                    $query->with($with)->select(['id', 'language_id', 'name', 'info_payment_1_page', 'info_payment_2_page', 'info_payment_combo']);
+                    $query->with($with)->select(['id', 'language_id', 'name', 'info_payment_1_page', 'info_payment_2_page', 'info_payment_combo', 'show_pages', 'show_video', 'show_lessons']);
                 }
             ])->select(['id', 'classroom_id', 'name', 'show_video', 'show_lessons']);
         };
