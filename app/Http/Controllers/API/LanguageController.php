@@ -18,6 +18,10 @@ class LanguageController extends Controller
             $show['show_video'] = 1;
         } else if ($request->content == 3) {
             $show['show_lessons'] = 1;
+        } else if ($request->content == 4) {
+            $show['show_pages'] = 1;
+            $show['show_video'] = 1;
+            $show['show_lessons'] = 1;
         }
 
         $language = Language::with([
